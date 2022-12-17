@@ -1,0 +1,55 @@
+
+.navbar{
+    height: 10rem;
+    padding: 2rem;
+    background-color: $primary-dark;
+    color: white;
+    @include Flex;
+
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+    &-logo{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    &-search{
+        input{
+            padding: 1rem;
+            width: 40rem;
+            background: rgba(255,255,255, .8);
+            border: none;
+            outline: none;
+            border-radius: .5rem;
+
+            &::placeholder{
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: black;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    &-cart{
+        padding: 1rem 1.5rem;
+        background: #BCEAD5;
+        border-radius: 1rem;
+        @include Flex;
+        position: relative;
+        color: darkgreen;
+        gap: 1rem;
+    }
+
+    &-notification{
+       font-size: 2rem;
+       @include Flex;
+       font-weight: 600;
+    }
+}

@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.navbar {
+  height: 10rem;
+  padding: 2rem;
+  background-color: #263159;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.navbar-logo {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.navbar-search input {
+  padding: 1rem;
+  width: 40rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+}
+
+.navbar-search input::-webkit-input-placeholder {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+}
+
+.navbar-search input:-ms-input-placeholder {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+}
+
+.navbar-search input::-ms-input-placeholder {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+}
+
+.navbar-search input::placeholder {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+}
+
+.navbar-cart {
+  padding: 1rem 1.5rem;
+  background: #BCEAD5;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: darkgreen;
+  gap: 1rem;
+}
+
+.navbar-notification {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+.pcard {
+  width: 35rem;
+  -webkit-box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.pcard-figure {
+  width: 100%;
+}
+
+.pcard-figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.pcard-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.pcard-info h1 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.pcard-info h3 {
+  font-size: 1.7rem;
+}
+
+.pcard-info h4 {
+  font-size: 2rem;
+}
+
+.pcard-info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pcard-info h5 {
+  font-size: 1.8rem;
+}
+
+.pcard-info h6 {
+  font-size: 1.5rem;
+}
+
+.pcard-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.pcard-add {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  background-color: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.pcard-remove {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  background-color: lightcoral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 87vh;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  position: fixed;
+  top: 107px;
+  left: 5px;
+}
+
+.sidebar-title {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: white;
+  opacity: .9;
+  font-weight: 300;
+}
+
+.sidebar-list {
+  padding: 2rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.sidebar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+.sidebar-label {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.sidebar-rating {
+  padding: 0 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-rating label {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+.sidebar-control {
+  padding: 2rem;
+}
+
+.sidebar-clear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 2.1rem;
+  font-weight: 700;
+  border-radius: .7rem;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  gap: 1.5rem;
+}
+
+.ccard {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px -2px 20px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px -2px 20px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ccard-figure {
+  width: 20rem;
+}
+
+.ccard-figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.ccard-name {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.ccard-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.ccard-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ccard-controls button {
+  border: none;
+  outline: none;
+  width: 6rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  font-size: 3rem;
+  -webkit-box-shadow: 2px -2px 10px 2px rgba(0, 0, 0, 0.2), -2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px -2px 10px 2px rgba(0, 0, 0, 0.2), -2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.ccard-controls div {
+  width: 6rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  font-size: 3rem;
+  -webkit-box-shadow: 2px -2px 10px 2px rgba(0, 0, 0, 0.2), -2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px -2px 10px 2px rgba(0, 0, 0, 0.2), -2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ccard-remove button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 2rem;
+  background-color: #f84e4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.cart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: calc(100vh - 100px);
+  padding: .5rem;
+}
+
+.cart-items {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.cart-checkout {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  background-color: #263159;
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  color: whitesmoke;
+}
+
+.cart-total {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.home {
+  min-height: calc(100vh - 100px);
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.home-sidebar {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  min-height: 100%;
+  background: #263159;
+}
+
+.home-main {
+  padding: 2rem 0;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

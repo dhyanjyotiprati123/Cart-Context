@@ -1,0 +1,36 @@
+
+.cart{
+    position: relative;
+    display: flex;
+    min-height: calc(100vh - 100px);
+    padding: .5rem;
+
+    &-items{
+        flex: 9;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem;
+    }
+    &-checkout{
+        flex: 3;
+        background-color: $primary-dark;
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        box-sizing: border-box;
+    }
+    &-title{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 300;
+        color: whitesmoke;
+    }
+    &-total{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+}
